@@ -107,7 +107,7 @@ st.markdown("""
 st.title("Digital Partner")
 
 # logo (注意检查你的本地路径是否正确)
-st.logo("C:/Users/17465/Desktop/python/AI/resources/background-removed.png")
+st.logo("background-removed.png")
 
 client = OpenAI(api_key=st.secrets['DEEPSEEK_API_KEY'], base_url="https://api.deepseek.com")
 
