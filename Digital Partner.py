@@ -109,7 +109,7 @@ st.title("Digital Partner")
 # logo (注意检查你的本地路径是否正确)
 st.logo("C:/Users/17465/Desktop/python/AI/resources/background-removed.png")
 
-client = OpenAI(api_key=os.environ.get('DEEPSEEK_API_KEY'), base_url="https://api.deepseek.com")
+client = OpenAI(api_key=st.secrets['DEEPSEEK_API_KEY'], base_url="https://api.deepseek.com")
 
 # 获取AI的聊天名称
 def get_ai_chat_name(client, name, character, chat_history):
